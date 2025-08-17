@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_18676cd0e454139a7d3bfade5b50c6a7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_18676cd0e454139a7d3bfade5b50c6a7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_18676cd0e454139a7d3bfade5b50c6a7 = L.map(
+                "map_18676cd0e454139a7d3bfade5b50c6a7",
+                {
+                    center: [54.6, -5.9],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4d8ba4cb90d9e03549f0ba23ec63d770 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4d8ba4cb90d9e03549f0ba23ec63d770.addTo(map_18676cd0e454139a7d3bfade5b50c6a7);
+        
+    
+
+        function geo_json_e2e4dcdae92cf8c125636dd70d75c0c5_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_e2e4dcdae92cf8c125636dd70d75c0c5 = L.geoJson(null, {
+                onEachFeature: geo_json_e2e4dcdae92cf8c125636dd70d75c0c5_onEachFeature,
+            
+            ...{
+}
+        });
+
+        function geo_json_e2e4dcdae92cf8c125636dd70d75c0c5_add (data) {
+            geo_json_e2e4dcdae92cf8c125636dd70d75c0c5
+                .addData(data);
+        }
+            geo_json_e2e4dcdae92cf8c125636dd70d75c0c5_add({"bbox": [-6.005425, 54.550223, -5.854048, 54.611024], "features": [{"bbox": [-5.890236, 54.596667, -5.890236, 54.596667], "geometry": {"coordinates": [-5.890236, 54.596667], "type": "Point"}, "id": "0", "properties": {"ADDRESS": "Ashdale Street - Off Bloomfield Ave.", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.596667, "LONGITUDE": -5.890236, "NAME": "Ashdale Street Car Park", "NON-DESIGNATED BAYS": 87, "POSTCODE": "BT5 5AX", "TARIFF": "TL3", "X CO-ORDINATE": 336410, "Y CO-ORDINATE": 374115}, "type": "Feature"}, {"bbox": [-5.929871, 54.5923, -5.929871, 54.5923], "geometry": {"coordinates": [-5.929871, 54.5923], "type": "Point"}, "id": "1", "properties": {"ADDRESS": "Bankmore Street/Maryville Street", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.5923, "LONGITUDE": -5.929871, "NAME": "Bankmore Street Car Park", "NON-DESIGNATED BAYS": 46, "POSTCODE": "BT7 1AQ", "TARIFF": "TM12", "X CO-ORDINATE": 333872, "Y CO-ORDINATE": 373522}, "type": "Feature"}, {"bbox": [-5.926693, 54.592281, -5.926693, 54.592281], "geometry": {"coordinates": [-5.926693, 54.592281], "type": "Point"}, "id": "2", "properties": {"ADDRESS": "Ormeau Avenue", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.592281, "LONGITUDE": -5.926693, "NAME": "Charlotte Street Car Park", "NON-DESIGNATED BAYS": 90, "POSTCODE": "BT7 1BG", "TARIFF": "TM7", "X CO-ORDINATE": 334066, "Y CO-ORDINATE": 373514}, "type": "Feature"}, {"bbox": [-5.922644, 54.60434, -5.922644, 54.60434], "geometry": {"coordinates": [-5.922644, 54.60434], "type": "Point"}, "id": "3", "properties": {"ADDRESS": "Corporation Sqaure/Tomb Street", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.60434, "LONGITUDE": -5.922644, "NAME": "Corporation Square Car Park", "NON-DESIGNATED BAYS": 198, "POSTCODE": "BT1 3AJ", "TARIFF": "TL4", "X CO-ORDINATE": 334270, "Y CO-ORDINATE": 374888}, "type": "Feature"}, {"bbox": [-5.923358, 54.605046, -5.923358, 54.605046], "geometry": {"coordinates": [-5.923358, 54.605046], "type": "Point"}, "id": "4", "properties": {"ADDRESS": "Corporation Street", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.605046, "LONGITUDE": -5.923358, "NAME": "Corporation Street Car Park", "NON-DESIGNATED BAYS": 124, "POSTCODE": "BT1 3DG", "TARIFF": "TL4", "X CO-ORDINATE": 334214, "Y CO-ORDINATE": 374958}, "type": "Feature"}, {"bbox": [-5.924265, 54.593924, -5.924265, 54.593924], "geometry": {"coordinates": [-5.924265, 54.593924], "type": "Point"}, "id": "5", "properties": {"ADDRESS": "Cromac Street", "BLUE BADGE BAYS": 1.0, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": 2.0, "FAMILY FRIENDLY BAYS": 1.0, "LATITUDE": 54.593924, "LONGITUDE": -5.924265, "NAME": "Cromac Street Car Park", "NON-DESIGNATED BAYS": 99, "POSTCODE": "BT2 8JN", "TARIFF": "TL6", "X CO-ORDINATE": 334232, "Y CO-ORDINATE": 373792}, "type": "Feature"}, {"bbox": [-5.925944, 54.603248, -5.925944, 54.603248], "geometry": {"coordinates": [-5.925944, 54.603248], "type": "Point"}, "id": "6", "properties": {"ADDRESS": "Talbot Street/Dunbar Street", "BLUE BADGE BAYS": 2.0, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": 1.0, "LATITUDE": 54.603248, "LONGITUDE": -5.925944, "NAME": "Dunbar Street Car Park", "NON-DESIGNATED BAYS": 32, "POSTCODE": "BT2 1LH", "TARIFF": "TM10", "X CO-ORDINATE": 334090, "Y CO-ORDINATE": 374713}, "type": "Feature"}, {"bbox": [-5.878777, 54.600309, -5.878777, 54.600309], "geometry": {"coordinates": [-5.878777, 54.600309], "type": "Point"}, "id": "7", "properties": {"ADDRESS": "Dundela Crescent", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.600309, "LONGITUDE": -5.878777, "NAME": "Dundela Crescent Car Park", "NON-DESIGNATED BAYS": 26, "POSTCODE": "BT4 3BN ", "TARIFF": "Free", "X CO-ORDINATE": 337106, "Y CO-ORDINATE": 374514}, "type": "Feature"}, {"bbox": [-5.925242, 54.600396, -5.925242, 54.600396], "geometry": {"coordinates": [-5.925242, 54.600396], "type": "Point"}, "id": "8", "properties": {"ADDRESS": "Exchange Street off Corporation Street", "BLUE BADGE BAYS": 2.0, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": 1.0, "LATITUDE": 54.600396, "LONGITUDE": -5.925242, "NAME": "Exchange Street Car Park", "NON-DESIGNATED BAYS": 46, "POSTCODE": "BT1 2LJ", "TARIFF": "TM8", "X CO-ORDINATE": 334135, "Y CO-ORDINATE": 374749}, "type": "Feature"}, {"bbox": [-5.930339, 54.605616, -5.930339, 54.605616], "geometry": {"coordinates": [-5.930339, 54.605616], "type": "Point"}, "id": "9", "properties": {"ADDRESS": "Frederick Street", "BLUE BADGE BAYS": 1.0, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.605616, "LONGITUDE": -5.930339, "NAME": "Frederick Street Car Park", "NON-DESIGNATED BAYS": 134, "POSTCODE": "BT1 2LW", "TARIFF": "TL4", "X CO-ORDINATE": 333821, "Y CO-ORDINATE": 375030}, "type": "Feature"}, {"bbox": [-6.005425, 54.550223, -6.005425, 54.550223], "geometry": {"coordinates": [-6.005425, 54.550223], "type": "Point"}, "id": "10", "properties": {"ADDRESS": "Glenburn Road-Dunmurry", "BLUE BADGE BAYS": 3.0, "CHARGED HOURS": "Free", "E-CAR BAYS": 2.0, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.550223, "LONGITUDE": -6.005425, "NAME": "Glenburn Road Car Park", "NON-DESIGNATED BAYS": 123, "POSTCODE": "BT17 9AG", "TARIFF": "Free", "X CO-ORDINATE": 329158, "Y CO-ORDINATE": 368703}, "type": "Feature"}, {"bbox": [-5.886109, 54.598169, -5.886109, 54.598169], "geometry": {"coordinates": [-5.886109, 54.598169], "type": "Point"}, "id": "11", "properties": {"ADDRESS": "Grampian Avenue", "BLUE BADGE BAYS": 1.0, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": 1.0, "LATITUDE": 54.598169, "LONGITUDE": -5.886109, "NAME": "Grampian Avenue Car Park", "NON-DESIGNATED BAYS": 41, "POSTCODE": "BT4 3AG", "TARIFF": "Free", "X CO-ORDINATE": 336658, "Y CO-ORDINATE": 374237}, "type": "Feature"}, {"bbox": [-5.935841, 54.593413, -5.935841, 54.593413], "geometry": {"coordinates": [-5.935841, 54.593413], "type": "Point"}, "id": "12", "properties": {"ADDRESS": "Hope Street", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Mon- Sat 0800-2100", "E-CAR BAYS": 2.0, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.593413, "LONGITUDE": -5.935841, "NAME": "Hope Street North Car Park", "NON-DESIGNATED BAYS": 41, "POSTCODE": "BT12 5EE", "TARIFF": "TM12", "X CO-ORDINATE": 333469, "Y CO-ORDINATE": 373666}, "type": "Feature"}, {"bbox": [-5.933922, 54.603463, -5.933922, 54.603463], "geometry": {"coordinates": [-5.933922, 54.603463], "type": "Point"}, "id": "13", "properties": {"ADDRESS": "Kent Street", "BLUE BADGE BAYS": 2.0, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.603463, "LONGITUDE": -5.933922, "NAME": "Kent Street Car Park", "NON-DESIGNATED BAYS": 66, "POSTCODE": "BT1 2JA", "TARIFF": "TM10", "X CO-ORDINATE": 333547, "Y CO-ORDINATE": 374736}, "type": "Feature"}, {"bbox": [-5.932752, 54.60461, -5.932752, 54.60461], "geometry": {"coordinates": [-5.932752, 54.60461], "type": "Point"}, "id": "14", "properties": {"ADDRESS": "Little Donegal Street/Stephen Street", "BLUE BADGE BAYS": 2.0, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": 2.0, "FAMILY FRIENDLY BAYS": 2.0, "LATITUDE": 54.60461, "LONGITUDE": -5.932752, "NAME": "Little Donegall Street Car Park", "NON-DESIGNATED BAYS": 105, "POSTCODE": "BT1 2JD", "TARIFF": "TL6", "X CO-ORDINATE": 333607, "Y CO-ORDINATE": 374853}, "type": "Feature"}, {"bbox": [-5.933385, 54.592701, -5.933385, 54.592701], "geometry": {"coordinates": [-5.933385, 54.592701], "type": "Point"}, "id": "15", "properties": {"ADDRESS": "Little Victoria Street/Bruce Street", "BLUE BADGE BAYS": 2.0, "CHARGED HOURS": "Mon- Sat 0800-2100", "E-CAR BAYS": 2.0, "FAMILY FRIENDLY BAYS": 1.0, "LATITUDE": 54.592701, "LONGITUDE": -5.933385, "NAME": "Little Victoria Street Car Park", "NON-DESIGNATED BAYS": 84, "POSTCODE": "BT2 7JH", "TARIFF": "TM12", "X CO-ORDINATE": 333650, "Y CO-ORDINATE": 373570}, "type": "Feature"}, {"bbox": [-5.955479, 54.575889, -5.955479, 54.575889], "geometry": {"coordinates": [-5.955479, 54.575889], "type": "Point"}, "id": "16", "properties": {"ADDRESS": "Marlborough Avenue", "BLUE BADGE BAYS": 2.0, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": 2.0, "LATITUDE": 54.575889, "LONGITUDE": -5.955479, "NAME": "Marlborough Avenue Car Park", "NON-DESIGNATED BAYS": 31, "POSTCODE": "BT9 7HB", "TARIFF": "TL2", "X CO-ORDINATE": 332265, "Y CO-ORDINATE": 371684}, "type": "Feature"}, {"bbox": [-5.946541, 54.602989, -5.946541, 54.602989], "geometry": {"coordinates": [-5.946541, 54.602989], "type": "Point"}, "id": "17", "properties": {"ADDRESS": "Northumberland Street/Kendal Street", "BLUE BADGE BAYS": 2.0, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": 2.0, "LATITUDE": 54.602989, "LONGITUDE": -5.946541, "NAME": "Northumberland Street Car Park", "NON-DESIGNATED BAYS": 87, "POSTCODE": "BT13 2JF", "TARIFF": "Free", "X CO-ORDINATE": 332750, "Y CO-ORDINATE": 374714}, "type": "Feature"}, {"bbox": [-5.886814, 54.599127, -5.886814, 54.599127], "geometry": {"coordinates": [-5.886814, 54.599127], "type": "Point"}, "id": "18", "properties": {"ADDRESS": "Parkgate Avenue", "BLUE BADGE BAYS": 1.0, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": 1.0, "LATITUDE": 54.599127, "LONGITUDE": -5.886814, "NAME": "Parkgate Avenue Car Park", "NON-DESIGNATED BAYS": 36, "POSTCODE": "BT4 1JA", "TARIFF": "Free", "X CO-ORDINATE": 336658, "Y CO-ORDINATE": 374375}, "type": "Feature"}, {"bbox": [-5.887805, 54.597197, -5.887805, 54.597197], "geometry": {"coordinates": [-5.887805, 54.597197], "type": "Point"}, "id": "19", "properties": {"ADDRESS": "Ravenscroft Avenue", "BLUE BADGE BAYS": 3.0, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": 2.0, "LATITUDE": 54.597197, "LONGITUDE": -5.887805, "NAME": "Ravenscroft Avenue Car Park", "NON-DESIGNATED BAYS": 53, "POSTCODE": "BT5 5BA", "TARIFF": "Free", "X CO-ORDINATE": 336608, "Y CO-ORDINATE": 374148}, "type": "Feature"}, {"bbox": [-5.868433, 54.594108, -5.868433, 54.594108], "geometry": {"coordinates": [-5.868433, 54.594108], "type": "Point"}, "id": "20", "properties": {"ADDRESS": "Sandown Road", "BLUE BADGE BAYS": 2.0, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": 2.0, "LATITUDE": 54.594108, "LONGITUDE": -5.868433, "NAME": "Sandown Road Car Park", "NON-DESIGNATED BAYS": 65, "POSTCODE": "BT5 6GT", "TARIFF": "Free", "X CO-ORDINATE": 337804, "Y CO-ORDINATE": 373839}, "type": "Feature"}, {"bbox": [-5.954924, 54.553536, -5.954924, 54.553536], "geometry": {"coordinates": [-5.954924, 54.553536], "type": "Point"}, "id": "21", "properties": {"ADDRESS": "Malone Road/Shaws Bridge", "BLUE BADGE BAYS": 4.0, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": 3.0, "LATITUDE": 54.553536, "LONGITUDE": -5.954924, "NAME": "Shaw\u0027s Bridge Car Park", "NON-DESIGNATED BAYS": 57, "POSTCODE": "BT9 5YN", "TARIFF": "Free", "X CO-ORDINATE": 332379, "Y CO-ORDINATE": 369116}, "type": "Feature"}, {"bbox": [-5.933594, 54.601901, -5.933594, 54.601901], "geometry": {"coordinates": [-5.933594, 54.601901], "type": "Point"}, "id": "22", "properties": {"ADDRESS": "Wine Tavern Street", "BLUE BADGE BAYS": 2.0, "CHARGED HOURS": "Mon- Sat 0800-1800 Thurs until 2100", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.601901, "LONGITUDE": -5.933594, "NAME": "Smithfield Car Park", "NON-DESIGNATED BAYS": 107, "POSTCODE": "BT1 1JQ", "TARIFF": "TM12", "X CO-ORDINATE": 333543, "Y CO-ORDINATE": 374569}, "type": "Feature"}, {"bbox": [-5.918011, 54.600366, -5.918011, 54.600366], "geometry": {"coordinates": [-5.918011, 54.600366], "type": "Point"}, "id": "23", "properties": {"ADDRESS": "Station Street", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.600366, "LONGITUDE": -5.918011, "NAME": "Station Street Car Park", "NON-DESIGNATED BAYS": 114, "POSTCODE": "BT5 1AS", "TARIFF": "TL6", "X CO-ORDINATE": 334561, "Y CO-ORDINATE": 374431}, "type": "Feature"}, {"bbox": [-5.854048, 54.595118, -5.854048, 54.595118], "geometry": {"coordinates": [-5.854048, 54.595118], "type": "Point"}, "id": "24", "properties": {"ADDRESS": "Wandsworth Road", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.595118, "LONGITUDE": -5.854048, "NAME": "Wandsworth Road Car Park", "NON-DESIGNATED BAYS": 24, "POSTCODE": "BT4 3LS", "TARIFF": "Free", "X CO-ORDINATE": 338755, "Y CO-ORDINATE": 373976}, "type": "Feature"}, {"bbox": [-5.888232, 54.5983, -5.888232, 54.5983], "geometry": {"coordinates": [-5.888232, 54.5983], "type": "Point"}, "id": "25", "properties": {"ADDRESS": "Westminster Avenue ", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.5983, "LONGITUDE": -5.888232, "NAME": "Westminster Avenue (East) Car Park", "NON-DESIGNATED BAYS": 10, "POSTCODE": "BT4 1QQ", "TARIFF": "Free", "X CO-ORDINATE": 336522, "Y CO-ORDINATE": 374275}, "type": "Feature"}, {"bbox": [-5.889029, 54.598303, -5.889029, 54.598303], "geometry": {"coordinates": [-5.889029, 54.598303], "type": "Point"}, "id": "26", "properties": {"ADDRESS": "Westminster Avenue North", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.598303, "LONGITUDE": -5.889029, "NAME": "Westminster Avenue (North) Car Park", "NON-DESIGNATED BAYS": 70, "POSTCODE": "BT4 1QQ", "TARIFF": "Free", "X CO-ORDINATE": 336460, "Y CO-ORDINATE": 374286}, "type": "Feature"}, {"bbox": [-5.888165, 54.5983, -5.888165, 54.5983], "geometry": {"coordinates": [-5.888165, 54.5983], "type": "Point"}, "id": "27", "properties": {"ADDRESS": "Westminster Avenue ", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.5983, "LONGITUDE": -5.888165, "NAME": "Westminster Avenue (West) Car Park", "NON-DESIGNATED BAYS": 10, "POSTCODE": "BT4 1QQ", "TARIFF": "Free", "X CO-ORDINATE": 336543, "Y CO-ORDINATE": 374286}, "type": "Feature"}, {"bbox": [-5.922635, 54.611024, -5.922635, 54.611024], "geometry": {"coordinates": [-5.922635, 54.611024], "type": "Point"}, "id": "28", "properties": {"ADDRESS": "Whitla Street", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Free", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.611024, "LONGITUDE": -5.922635, "NAME": "Whitla Street Car Park", "NON-DESIGNATED BAYS": 50, "POSTCODE": "BT15 1JP", "TARIFF": "Free", "X CO-ORDINATE": 334266, "Y CO-ORDINATE": 375596}, "type": "Feature"}, {"bbox": [-5.927695, 54.606033, -5.927695, 54.606033], "geometry": {"coordinates": [-5.927695, 54.606033], "type": "Point"}, "id": "29", "properties": {"ADDRESS": "York Street", "BLUE BADGE BAYS": null, "CHARGED HOURS": "Mon- Sat 0800-1800", "E-CAR BAYS": null, "FAMILY FRIENDLY BAYS": null, "LATITUDE": 54.606033, "LONGITUDE": -5.927695, "NAME": "Lancaster Street - York Street", "NON-DESIGNATED BAYS": 53, "POSTCODE": "BT15 1AS", "TARIFF": "TL4", "X CO-ORDINATE": 333947, "Y CO-ORDINATE": 375082}, "type": "Feature"}], "type": "FeatureCollection"});
+        geo_json_e2e4dcdae92cf8c125636dd70d75c0c5.setStyle(function(feature) {return feature.properties.style;});
+
+        
+    
+            geo_json_e2e4dcdae92cf8c125636dd70d75c0c5.addTo(map_18676cd0e454139a7d3bfade5b50c6a7);
+        
+</script>
+</html>
