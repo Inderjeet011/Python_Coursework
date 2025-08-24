@@ -1,0 +1,4 @@
+numpy
+pytest==8.4.1
+pytest-benchmark==5.1.0
+python-levenshtein>=0.20.0
